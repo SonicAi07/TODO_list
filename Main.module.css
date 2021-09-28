@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.master{
+    background-image: url(https://mocah.org/uploads/posts/10181-pc-wallpaper-hd-1080p-nature-wallpaper__pc-wallpaper-hd-1080p-nature-wallpaper.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.todo{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+}
+.section1,
+.section2{
+    width: 700px;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.sec1_title,
+.sec2_title{
+    font-size: 38px;
+    color: #ffffff;
+    font-weight: 550;
+    text-decoration: underline;
+}
+.add_item_search{
+    margin-bottom: 20px;
+    position: relative;
+}
+.add_item_search input{
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.add_item_search input:focus{
+    outline: none;
+}
+.btn_add{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 30%;
+    width: 70px;
+    height: 40px;
+    padding: 2px;
+    border: none;
+    border-left: 1px solid black;
+    border-radius: 10px 0 0 10px;
+    font-weight: 550;
+    background: #000000;
+    color: #fff;
+    cursor: pointer;
+}
+input:valid ~ .btn_add{
+    display: block;
+}
+.all_items{
+    width: 100%;
+}
+.all_items ul,
+.cmp_items ul{
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+}
+.all_items ul li{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+.all_items li span{
+    width: 400px;
+}
+.btns{
+    width: 320px;
+}
+.btns button{
+    width: 70px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 1px;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 #74703d;
+    cursor: pointer;
+}
+.btns button:hover,
+.cmp_btns button:hover{
+    transform: scale(1.2);
+    transition: .2s;
+}
+.cmp_items{
+    width: 100%;
+}
+.cmp_items ul li{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: default;
+}
+.cmp_items li span{
+    width: 450px;
+}
+.cmp_btns{
+ width: 350px;   
+}
+.cmp_btns button{
+    width: 80px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 1px;
+    background: #000000;
+    color: #fff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 #74703d;
+}
